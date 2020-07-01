@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 import ImageHero from 'assets/images/img-hero.jpg'
 import ImageHero_ from 'assets/images/img-hero-frame.jpg'
@@ -20,7 +21,9 @@ export default function Hero(props) {
 
    
     return (
+        <Fade bottom >
         <section className="container pt-4">
+            
             <div className="row align-items-center">
                 <div className="col-auto pr-4" style={{ width: 530 }}>
                     <h1 className=" line-height-1 mb-3">
@@ -82,5 +85,6 @@ export default function Hero(props) {
                 </div>
             </div>
         </section>
+        </Fade>
     )
 }
